@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(0, 0%, 95%);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15rem;
+  border-radius: 30px;
+  width: 100%;
+  height: 30rem;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3rem;
+  height: 100%;
+  width: 100%;
+}
+
+img {
+  width: 64px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+  color: hsla(0, 0%, 100%, 0.75);
+  border-radius: 10px 0 0 5px;
+}
+
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  color: hsla(0, 0%, 100%, 0.75);
+  border-radius: 0 5px 5px 0;
+}
+
+h2 {
+  font-family: "Big Shoulders Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: hsl(0, 0%, 95%);
+}
+p {
+  font-family: "Lexend Deca", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  padding: 0 0 4rem 0;
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.5;
+}
+
+button {
+  width: 7rem;
+  height: 1.5rem;
+  border-radius: 50px;
+  background-color: hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 95%);
+  border: none;
+  padding: 1rem;
+  font-family: "Lexend Deca", serif;
+  font-weight: 700;
+  font-style: normal;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent; 
+
+}
+
+.sedans button {
+  color: hsl(31, 77%, 52%);
+}
+
+.sedans button:hover {
+cursor: pointer;
+border: 1px solid white;
+color: white;
+background-color: hsl(31, 77%, 52%);;
+}
+
+.suvs button {
+  color: hsl(184, 100%, 22%);
+}
+
+.suvs button:hover {
+  cursor: pointer;
+  border: 1px solid white;
+  color: white;
+  background-color: hsl(184, 100%, 22%);;
+  }
+
+.luxury button {
+  color: hsl(179, 100%, 13%);
+}
+
+.luxury button:hover {
+  cursor: pointer;
+  border: 1px solid white;
+  color: white;
+  background-color: hsl(179, 100%, 13%);
+  }
+
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+    height: 100%;
+  }
+  .sedans {
+    border-radius: 5px 5px 0 0 ;
+  }
+
+  .luxury{
+    border-radius: 0 0 5px 5px;
+  }
+}
